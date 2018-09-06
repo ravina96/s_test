@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SPIRIT Clinical Trial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/scrolling-nav.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-success bg-white fixed-top" id="mainNav" style="border-bottom: 2px solid #0a8fab">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="static/img/spirit.png" width="25%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-dark font-weight-light" href="#endometriosis">Endometriosis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-dark font-weight-light" href="#spirit">SPIRIT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-dark font-weight-light" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger text-dark font-weight-light" data-toggle="modal" data-target="#eligibleform">Eligibility</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-white text-secondary">
+      <div class="container text-center">
+        <center><img src="static/img/imgo.jpg" width="70%"></center>
+        <p class="lead col-lg-10 mx-auto text-dark" style="padding-top: 20px; line-height: 200%; font-size: 18px">The SPIRIT clinical research program is currently seeking participants for two studies testing an investigational medicine for pain associated with endometriosis. <br> Click below to see if you may be eligible for the study. </p>
+      </div>
+      <div class="container text-center">
+      <button type="button" class="btn font-weight-light shadow" style="background-color: #008DAB; color: white; padding: 15px; width:250px; border-radius: 300px" data-toggle="modal" data-target="#eligibleform">See if you are eligible</button>
+      <div class="modal fade" id="eligibleform" role="dialog">
+		    <div class="modal-dialog">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <h4 class="modal-title">Eligibility Questionnaire</h4>
+		        </div>
+		        <div class="modal-body">
+		        	<form name="feedback" action="javascript:void(0)">
+		        		<p>Are you a woman and 18 to 50 years of age?</p>
+					  <label>
+					    <input type="radio" id="yes" name="yesOrNo" value="yes" onchange="displayQuestion(this.value)" />Yes</label>
+					  <label>
+					    <input type="radio" id="no" name="yesOrNo" value="no" onchange="displayQuestion(this.value)" />No</label>
+
+					  <div id="yesQuestion" style="display:none;"><br/>
+					    Did you have surgery, including laparoscopy, in the last 10 years for endometriosis? 
+					    <label>
+					    	<input type="radio" id="yes" name="yesOrNo" value="yes" onchange="displayQuestion(this.value)" />Yes</label>
+					  	<label>
+					    	<input type="radio" id="no" name="yesOrNo" value="no" onchange="displayQuestion(this.value)" />No</label>
+					  </div>
+
+					  <div id="noQuestion" style="display:none;"><br/>
+					    Thank you for your interest in the SPIRIT clinical research program. Based on your answer to the question, you are not eligible to participate in the program. 
+					  </div>
+
+					  <div id="yesQuestion2" style="display:none;"><br/>
+					    Have you been told by a doctor that you have endometriosis? 
+					    <label>
+					    	<input type="radio" id="yes2" name="yesOrNo" value="yes2" onchange="displayQuestion(this.value)" />Yes</label>
+					  	<label>
+					    	<input type="radio" id="no" name="yesOrNo" value="no" onchange="displayQuestion(this.value)" />No</label>
+					  </div>
+
+						<br/><br/><input type="submit">
+
+					</form>
+		          <!-- <a name="form295389735" id="formAnchor295389735"></a>
+					<script type="text/javascript" src="https://fs2.formsite.com/include/form/embedManager.js?295389735"></script>
+					<script type="text/javascript">
+					EmbedManager.embed({
+						key: "https://fs2.formsite.com/res/showFormEmbed?EParam=m%2FOmK8apOTDk4wyeEfJJXcd%2FCVfYhMrF&295389735",
+						width: "100%",
+						mobileResponsive: true
+					});
+					</script> -->
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		      
+		    </div>
+		</div>
+      </div>
+
+    </header>
+
+	<hr class="style-eight" noshade> 
+
+    <section id="endometriosis">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="font-weight-light text-dark" style="font-size: 50px; line-height: 190%">What is endometriosis?</h2>
+            <p class="lead" style="line-height: 180%">Endometriosis is a condition in which tissue that normally lines the uterus grows outside of the uterus. This tissue, which does not belong outside the uterus, becomes trapped and can cycle with your period, bleed, and cause symptoms like pain. It can also cause irritation that can lead to scarring and “adhesions,” which are abnormal bands of tissue that can cause organs to stick to each other. Endometriosis can lead to trouble getting pregnant.</p>
+            <a href="/endometriosis"><p class="lead" style="text-align: right; color: #008DAB">Learn more here >>></p></a>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+	<hr class="style-eight" noshade> 
+
+    <section id="spirit" class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="font-weight-light text-dark" style="font-size: 50px; text-align: right; line-height: 190%">What is the SPIRIT study?</h2>
+            <p class="lead" style="line-height: 180%; text-align: right">The SPIRIT clinical research program consists of two clinical trials testing whether an investigational medicine, relugolix, used in combination with female hormones, is safe and reduces the pain associated with endometriosis.  It also looks at how the pain affects how you function and feel.  Patients who complete either of these two clinical trials may qualify  for another trial where relugolix would be administered for a longer duration of time. </p>
+            <a href="/spirit"><p class="lead" style="text-align: left; color: #008DAB">Learn more here >>></p></a>
+          </div>
+        </div>
+        <div class="text-center">
+        <button type="button" class="btn font-weight-light shadow" style="background-color: #008DAB; color: white; padding: 15px; width:250px; border-radius: 300px" data-toggle="modal" data-target="#eligibleform">See if you are eligible</button>
+        </div>
+      </div>
+    </section>
+
+	<hr class="style-eight" noshade>     
+
+    <section id="faq">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="font-weight-light text-dark" style="font-size: 50px; text-align: left; line-height: 200%">FAQs</h2>
+            
+            <p class="lead" style="font-size: 25px">About Clinical Trials (Clinical Studies) in General</p>
+            <button class="accordion font-weight-light" style="font-size: 17px">What is a clinical trial or clinical study?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">A clinical trial is a research study in which the participants receive investigational medicine(s) under the supervision of a doctor and other research health care professionals to study the effects of a new medicine. Clinical trials follow a strict set of rules to ensure that study participants are protected and that the investigational medicine(s) is tolerated and correctly analyzed for safety and effectiveness. Regulatory authorities, like the Food and Drug Administration (FDA) in the United States, review clinical trial information and make decisions about whether to approve new medicines. </p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">What are the phases of clinical trials?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">There are 3 phases of clinical trials (clinical studies) before an investigational medicine is considered for approval by a regulatory authority. Phase 1 usually involves a small number of participants to decide on a safe dose followed by Phase 2 and 3 studies which involve larger numbers of participants to test the safety and efficacy (whether it works) of the investigational medicine. The SPIRIT Study is a phase 3 study.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">What does an Institutional Review Board do?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">Institutional Review Boards (IRBs) review and approve clinical study protocols. The clinical study protocol is a document that describes how a clinical study will be conducted, including the objective(s) and study design. IRBs ensure the safety of study subjects and ensure the data collected is of high quality.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">Where can I find more information?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%"><a href="https://clinicaltrials.gov/">Click here</a> to go to a helpful resource, ClinicalTrials.gov, where you can learn more about clinical trials and search for other clinical trials.</p>
+			</div>
+            
+            <p class="lead" style="font-size: 25px; padding-top: 10px">About Participation, Reimbursement, Permission</p>
+            <button class="accordion font-weight-light" style="font-size: 17px">Why should I be in clinical research?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">Taking part in a SPIRIT Study is a personal decision and may or may not make the pain you have with endometriosis better and may or may not have direct benefit for you. Knowledge from this study may help doctors better understand 1) treatments for patients with pain associated with endometriosis and 2) who is more likely to benefit or who is more likely to have side effects from the investigational medicine. It may also help future patients with endometriosis-associated pain. <br>
+  			When the study is done at all the study sites, the data will be analyzed. People who took part in the study will have an opportunity to learn of the results. <br>
+  			When the first SPIRIT Study is done, participants may qualify for an extension study in which all patients receive the active investigational medicines.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">What are the first steps in the process of figuring out whether the SPIRIT Study is right for me?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">The first step to find out if you are eligible to participate in the SPIRIT Study is to go through the screening process at the clinical site. At your first visit to the study site, you will be asked to review an informed consent form (ICF), which explains the purpose of this research study, the procedures, benefits, risks and precautions. The ICF at each study site is approved by an Institutional Review Board (IRB), a governing board for clinical studies. The IRB is independent of the study doctor and the sponsor. <br>
+  				The screening process includes a review by a doctor and other research health care professionals at the clinical site to see whether you qualify for the study. <br>
+  			The study staff at the clinical site will talk with you about details including the length of the study, the number of visits involved, and the types of tests that are performed at those visits. The study staff will ask you to give them information from your medical records, including surgical diagnosis of endometriosis. You will need to be evaluated by the study staff to decide if you qualify. Only volunteers who meet all of the criteria for the SPIRIT Study can join. <br>
+  			The decision to participate in clinical research study is personal and complex. If you are interested and pre-qualify, you will have the opportunity to carefully review the informed consent for the study and to discuss study details with your primary care provider and family members. <br>
+  			<a href="https://clinicaltrials.gov/ct2/show/NCT03204318?term=spirit&cond=endometriosis&rank=2">Click here</a> to see additional details about the SPIRIT 1 Phase 3 clinical trial and <a href="https://clinicaltrials.gov/ct2/show/NCT03204331?term=spirit&cond=endometriosis&rank=1">click here</a> to see additional details about the SPIRIT 2 Phase 3 clinical trial.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">Will I have to pay anything to be in the SPIRIT Study?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">As part of the study, you will receive the study drugs, tests, and procedures at no cost to you or your insurance company. <br>
+  				You and your insurance company will continue to pay for your routine tests and services that would be performed as part of your regular health care.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">Will I be paid to participate?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">The study team at the clinical site will review any compensation for participation that may apply.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">If I enroll in the study, will I be reimbursed for travel to and from the clinical site for each visit?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">The study team at the clinical site will review possible transportation options with you.</p>
+			</div>
+			<button class="accordion font-weight-light" style="font-size: 17px">Can I pull out of (or withdraw from) the SPIRIT Study after I have started in it?</button>
+			<div class="panel">
+			  <p class=lead style="color:black; font-size: 14px; line-height: 190%">Your decision to be part of the study is completely voluntary and you may drop out without a penalty or impact on your future medical care. If you do decide to stop participation before your part in the study is over, you will be asked to notify the study team before stopping. This is so that you can return to the research center at least 1 more time to have a final “closing” visit to check on your general health and to return any unused study medicines and other supplies.</p>
+			</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center" style="padding: 20px">
+        <p class="lead">Click below to see if you are eligible to participate</p>
+        <div style="padding-bottom: 40px">
+        <button type="button" class="btn font-weight-light shadow" style="background-color: #008DAB; color: white; padding: 15px; width:250px; border-radius: 300px" data-toggle="modal" data-target="#eligibleform">See if you are eligible</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #21252917">
+      <center>
+      <div class="container">
+      	<img src="static/img/myovant.png" style="padding-top: 30px">
+      	<div class="text-center">
+        <blockquote class="blockquote text-dark font-weight-light" style = "font-size:15px">
+  			<p class="mb-1">The site is intended for residents of the United States.</p>
+  			<p>Copyright &copy; 2017 Myovant Sciences, Inc. All rights reserved.</p>
+		</blockquote>
+		</div>
+		<a href="https://static1.squarespace.com/static/5988d80737c581a364624098/t/5b6a0062aa4a993b18cb693b/1533673571298/myovant+privacy+statement.pdf" target="_blank"><p class="mb-1 text-dark font-weight-light">Privacy</p></a>
+      </div>
+      </center>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="static/js/scrolling-nav.js"></script>
+
+    <script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight){
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script>
+  		function displayQuestion(answer) {
+			document.getElementById(answer + 'Question').style.display = "block";
+			if (answer == "yes") { // hide the div that is not selected
+				document.getElementById('noQuestion').style.display = "none";
+			} else if (answer == "yes2") {
+				document.getElementById('yesQuestion').style.display = "none";
+				document.getElementById('noQuestion').style.display = "none";
+			} 
+			else if (answer == "no") {
+				document.getElementById('yesQuestion').style.display = "none";
+			}
+		}
+  	</script>
+
+  </body>
+
+</html>
